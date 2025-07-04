@@ -1,0 +1,8 @@
+com\biblioteca_digital_fer\biblioteca_digital_fer\Interface\LibraryInterface.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Models\ResponseLibrary.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Service\LibraryImplement.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\BibliotecaDigitalFerApplication.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Models\BodySearch.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Models\Book.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Controller\LibraryController.class
+com\biblioteca_digital_fer\biblioteca_digital_fer\Service\Responses.class
