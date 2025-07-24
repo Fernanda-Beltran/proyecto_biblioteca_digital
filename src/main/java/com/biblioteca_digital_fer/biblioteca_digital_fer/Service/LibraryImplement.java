@@ -3,6 +3,7 @@ package com.biblioteca_digital_fer.biblioteca_digital_fer.Service;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Interface.LibraryInterface;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.BodySearch;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.Book;
+import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.Mensaje;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.ResponseLibrary;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,18 @@ public class LibraryImplement implements LibraryInterface {
             return responses.NormalResponse();
         }catch (Exception e){
             return responses.ResponseFailMessage();
+        }
+    }
+
+    public ResponseEntity<Mensaje> mensajePoncho(){
+        Mensaje mensaje = new Mensaje();
+        try {
+            mensaje.setMensaje("Hola Poncho, es ilegal hacerte el robot que me pides pero con gusto te enseño python! que te vaya bien hoy y ojalá que no te dejen trabajo extra hoy :)");
+
+            return  ResponseEntity.ok(mensaje);
+
+        }catch (Exception e) {
+                return null;
         }
     }
 

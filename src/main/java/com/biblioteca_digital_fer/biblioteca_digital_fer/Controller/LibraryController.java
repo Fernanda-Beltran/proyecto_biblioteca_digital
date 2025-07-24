@@ -2,6 +2,7 @@ package com.biblioteca_digital_fer.biblioteca_digital_fer.Controller;
 
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.BodySearch;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.Book;
+import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.Mensaje;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Models.ResponseLibrary;
 import com.biblioteca_digital_fer.biblioteca_digital_fer.Service.LibraryImplement;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,7 @@ public class LibraryController {
         return libraryImplement.addBook(book);
     }
 
+    @GetMapping(value = "/poncho")
+    public ResponseEntity<Mensaje> mensajePoncho(){return libraryImplement.mensajePoncho();}
 
 }
