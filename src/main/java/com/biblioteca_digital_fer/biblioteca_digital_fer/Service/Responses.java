@@ -27,5 +27,11 @@ public class Responses {
         response.setMessage("Success");
         return  ResponseEntity.ok(response);
     }
+    public ResponseEntity<ResponseLibrary> paraPoncho(){
+        response.setBooks(null);
+        response.setResult("200");
+        response.setMessage("Hola Poncho, es ilegal hacerte el robot que me pides pero con gusto te enseño python! que te vaya bien hoy y ojalá que no te dejen trabajo extra hoy :)");
+        return ResponseEntity.ok(response);
+    }
 
 }

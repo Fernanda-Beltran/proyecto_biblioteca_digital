@@ -10,5 +10,5 @@ public interface LibraryInterface {
     ResponseEntity<ResponseLibrary> getBooks();
     ResponseEntity<ResponseLibrary> getSearch(BodySearch bodySearch);
     ResponseEntity<ResponseLibrary> addBook(Book book);
-    ResponseEntity<Mensaje> mensajePoncho();
+    ResponseEntity<ResponseLibrary> mensajePoncho();
 }

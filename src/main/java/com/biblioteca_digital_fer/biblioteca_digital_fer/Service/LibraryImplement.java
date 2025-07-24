@@ -53,15 +53,13 @@ public class LibraryImplement implements LibraryInterface {
         }
     }
 
-    public ResponseEntity<Mensaje> mensajePoncho(){
+    public ResponseEntity<ResponseLibrary> mensajePoncho(){
         Mensaje mensaje = new Mensaje();
         try {
-            mensaje.setMensaje("Hola Poncho, es ilegal hacerte el robot que me pides pero con gusto te enseño python! que te vaya bien hoy y ojalá que no te dejen trabajo extra hoy :)");
-
-            return  ResponseEntity.ok(mensaje);
+            return responses.paraPoncho();
 
         }catch (Exception e) {
-                return null;
+                return responses.ResponseFailMessage();
         }
     }
 
