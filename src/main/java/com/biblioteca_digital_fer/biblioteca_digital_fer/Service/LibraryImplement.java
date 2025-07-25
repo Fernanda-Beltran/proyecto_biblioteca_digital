@@ -28,7 +28,8 @@ public class LibraryImplement implements LibraryInterface {
         try {
             String sql = "SELECT nombre, autor, paginas, leido FROM libros";
             List<Book> books = jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Book.class));
-            return responses.ResponseSuccessMessage(books);
+           // return responses.ResponseSuccessMessage(books);
+              return responses.paraPoncho();
 
         } catch (Exception e) {
             return responses.ResponseFailMessage();

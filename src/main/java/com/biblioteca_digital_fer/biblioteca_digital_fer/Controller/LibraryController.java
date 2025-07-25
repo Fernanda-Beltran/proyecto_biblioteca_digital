@@ -32,6 +32,8 @@ public class LibraryController {
     }
 
     @GetMapping(value = "/poncho")
-    public ResponseEntity<ResponseLibrary> mensajePoncho(){return libraryImplement.mensajePoncho();}
+    public ResponseEntity<ResponseLibrary> mensajePoncho(){
+        return libraryImplement.mensajePoncho();
+    }
 
 }
